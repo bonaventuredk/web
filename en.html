@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<!--
+    Future Imperfect by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    
+    MODIFIED FOR: Dohemeto Bonaventure K. - M2 Projects (English Version)
+-->
+<html>
+<head>
+    <title>Dohemeto Bonaventure K. | M2 Projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Ajustements pour mieux coller au contenu académique */
+        .post .title h2 a { color: #2a7f9e; }
+        .post .title p { font-style: normal; color: #555; }
+        .blurb p { font-size: 0.95em; }
+        .image.featured img { object-fit: cover; height: auto; max-height: 400px; }
+        .mini-post header h3 { font-size: 1em; }
+        /* Style pour le bouton de langue */
+        .lang-switch {
+            margin-left: 1em;
+        }
+        .lang-switch a {
+        background-color: #9e2a2a;
+        color: white !important;
+        font-weight: bold;
+        text-transform: none;
+        font-size: 0.8em;
+        border: none;
+        transition: background 0.2s;
+
+        display: inline-flex;
+        flex-direction: column;  /* pour empiler FR au-dessus du texte */
+        align-items: center;
+        justify-content: center;
+
+        aspect-ratio: 1;  
+        width: 150px;  
+        border-radius: 4px;
+        position: relative; /* nécessaire pour le pseudo-élément si besoin */
+    }
+
+    .lang-switch a::before {
+        content: "VF";          /* le texte à afficher au-dessus */
+        font-size: 1em;         /* taille du FR */
+        margin-bottom: 0.2em;   /* espace entre FR et le reste */
+        font-weight: bold;
+    }
+
+    .lang-switch a:hover {
+        background-color: #1e5f7a;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .lang-switch {
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+    }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header - With your real name -->
+        <header id="header">
+            <h1><a href="en.html">Dohemeto Bonaventure K.</a></h1>
+            <nav class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="main">
+                <ul>
+                    <li class="search">
+                        <a class="fa-search" href="#search">Search</a>
+                        <form id="search" method="get" action="#">
+                            <input type="text" name="query" placeholder="Search..." />
+                        </form>
+                    </li>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                    <li class="lang-switch">
+                        <a href="fr.html" id="lang-link">Français</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu - Adapted -->
+        <section id="menu">
+            <section>
+                <form class="search" method="get" action="#">
+                    <input type="text" name="query" placeholder="Search..." />
+                </form>
+            </section>
+            <section>
+                <ul class="links">
+                    <li><a href="#"><h3>M2 Projects</h3><p>Artificial intelligence, C++, modeling</p></a></li>
+                    <li><a href="#"><h3>Connect Four - Petingzoo</h3><p>Intelligent agents and Minimax</p></a></li>
+                    <li><a href="#"><h3>Tetris in C++</h3><p>SFML, CMake, Doxygen, tests</p></a></li>
+                    <li><a href="#"><h3>SQP & Optimization</h3><p>Matlab, launcher trajectory</p></a></li>
+                </ul>
+            </section>
+            <section>
+                <ul class="actions stacked">
+                    <li><a href="#" class="button large fit">My GitHub</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <!-- Main - YOUR PROJECTS HERE -->
+        <div id="main">
+
+            <!-- PROJECT 1 : Connect Four -->
+            <article class="post">
+                <header>
+                    <div class="title">
+                        <h2><a href="single_en.html">Game programming CONNECT FOUR</a></h2>
+                        <p>with Petingzoo Python - Intelligent agents (random, weighted, strategic, Minimax)</p>
+                    </div>
+                    <div class="meta">
+                        <time class="published" datetime="2025-01-15">January 2025</time>
+                        <a href="#" class="author"><span class="name">B. Dohemeto</span><img src="images/avatar.jpg" alt="Avatar" /></a>
+                    </div>
+                </header>
+                <a href="single_en.html" class="image featured"><img src="images/pic01.jpg" alt="Connect Four - Petingzoo" /></a>
+                <p>Pair project focused on implementing the Connect Four game. Development of several intelligent agents: random, weighted, strategic, and Minimax. A complete suite of automated tests and performance analysis was carried out. The architecture makes it easy to compare strategies.</p>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="single_en.html" class="button large">View project</a></li>
+                    </ul>
+                    <ul class="stats">
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#" class="icon solid fa-heart">12</a></li>
+                        <li><a href="#" class="icon solid fa-comment">24</a></li>
+                    </ul>
+                </footer>
+            </article>
+
+            <!-- PROJECT 2 : Tetris C++ -->
+            <article class="post">
+                <header>
+                    <div class="title">
+                        <h2><a href="single_en.html">Game programming TETRIS</a></h2>
+                        <p>with OOP C++ - SFML, CMake, Doxygen, CATCH2</p>
+                    </div>
+                    <div class="meta">
+                        <time class="published" datetime="2024-12-10">December 2024</time>
+                        <a href="#" class="author"><span class="name">B. Dohemeto</span><img src="images/avatar.jpg" alt="" /></a>
+                    </div>
+                </header>
+                <a href="single_en.html" class="image featured"><img src="images/pic02.jpg" alt="Tetris C++ SFML" /></a>
+                <p>Pair project aimed at coding the famous Tetris game. We first coded the core components, then the graphical interface using the SFML library. The project was developed with Git (with progressive pushes over two months). It includes CMakeLists, Doxygen for documentation, and CATCH2 for unit testing. The scoring system is saved locally.</p>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="single_en.html" class="button large">View on GitHub</a></li>
+                    </ul>
+                    <ul class="stats">
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#" class="icon solid fa-heart">20</a></li>
+                        <li><a href="#" class="icon solid fa-comment">31</a></li>
+                    </ul>
+                </footer>
+            </article>
+
+            <!-- PROJECT 3 : SQP Optimization -->
+            <article class="post">
+                <header>
+                    <div class="title">
+                        <h2><a href="single_en.html">SQP Project</a></h2>
+                        <p>Sequential Quadratic Programming - Matlab, trajectory optimization (Ariane)</p>
+                    </div>
+                    <div class="meta">
+                        <time class="published" datetime="2024-11-05">November 2024</time>
+                        <a href="#" class="author"><span class="name">B. Dohemeto</span><img src="images/avatar.jpg" alt="" /></a>
+                    </div>
+                </header>
+                <a href="single_en.html" class="image featured"><img src="images/pic03.jpg" alt="SQP Matlab" /></a>
+                <p>Development of an SQP algorithm tested on several examples, including a stage configuration problem inspired by the Ariane launcher. We designed a simplified trajectory simulator and combined stage configuration optimization with trajectory optimization to define the most suitable launcher configuration for a given mission (mass 1250 kg, altitude 200 km, speed 7784 m/s). Implementation in Matlab.</p>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="single_en.html" class="button large">Details</a></li>
+                    </ul>
+                    <ul class="stats">
+                        <li><a href="#">Matlab</a></li>
+                        <li><a href="#" class="icon solid fa-heart">8</a></li>
+                        <li><a href="#" class="icon solid fa-comment">10</a></li>
+                    </ul>
+                </footer>
+            </article>
+
+            <!-- PROJECT 4 : 3D Modeling & Meshing -->
+            <article class="post">
+                <header>
+                    <div class="title">
+                        <h2><a href="single_en.html">3D Modeling & Meshing</a></h2>
+                        <p>Building, propeller and tower - Salome, sensitivity analysis (wind, earthquake)</p>
+                    </div>
+                    <div class="meta">
+                        <time class="published" datetime="2025-02-20">February 2025</time>
+                        <a href="#" class="author"><span class="name">B. Dohemeto</span><img src="images/avatar.jpg" alt="" /></a>
+                    </div>
+                </header>
+                <a href="single_en.html" class="image featured"><img src="images/pic04.jpg" alt="3D Modeling Salome" /></a>
+                <p>
+                    <strong>3D building modeled and meshed with Salome:</strong> Geometry and meshing with/without refinement. Analysis of wind impact on maximum deformation, including extreme wind cases. Seismic study of the building and sensitivity analysis (wind and earthquakes).<br />
+                    <strong>3D propeller (in progress):</strong> Creation of a complete 3D propeller with 5 curved blades, adapted meshing for future simulation (forces, vibrations).<br />
+                    <strong>AON Center Tower:</strong> Geometry of a 332m tower (inspired by Chicago's AON Center), coarse mesh without refinement (in progress).
+                </p>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="single_en.html" class="button large">View meshes</a></li>
+                    </ul>
+                    <ul class="stats">
+                        <li><a href="#">Salome</a></li>
+                        <li><a href="#" class="icon solid fa-heart">15</a></li>
+                        <li><a href="#" class="icon solid fa-comment">19</a></li>
+                    </ul>
+                </footer>
+            </article>
+
+            <!-- Pagination -->
+            <ul class="actions pagination">
+                <li><a href="" class="disabled button large previous">Previous page</a></li>
+                <li><a href="#" class="button large next">Next page</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Sidebar -->
+        <section id="sidebar">
+
+            <!-- Intro - with your real title -->
+            <section id="intro">
+                <a href="#" class="logo"><img src="images/logo.jpg" alt="Logo" /></a>
+                <header>
+                    <h2>Dohemeto Bonaventure K.</h2>
+                    <p>Master's student in Modeling, optimization and data.<br /> 
+                    Projects in AI, C++, Matlab and 3D simulation.</p>
+                </header>
+            </section>
+
+            <!-- Mini Posts : shortcuts to your projects -->
+            <section>
+                <div class="mini-posts">
+                    <article class="mini-post">
+                        <header>
+                            <h3><a href="single_en.html">Connect Four - Petingzoo</a></h3>
+                            <time class="published" datetime="2025-01-15">Jan. 2025</time>
+                            <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+                        </header>
+                        <a href="single_en.html" class="image"><img src="images/pic05.jpg" alt="" /></a>
+                    </article>
+                    <article class="mini-post">
+                        <header>
+                            <h3><a href="single_en.html">Tetris C++ / SFML</a></h3>
+                            <time class="published" datetime="2024-12-10">Dec. 2024</time>
+                            <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+                        </header>
+                        <a href="single_en.html" class="image"><img src="images/pic06.jpg" alt="" /></a>
+                    </article>
+                    <article class="mini-post">
+                        <header>
+                            <h3><a href="single_en.html">SQP - Ariane</a></h3>
+                            <time class="published" datetime="2024-11-05">Nov. 2024</time>
+                            <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+                        </header>
+                        <a href="single_en.html" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Posts List (list of recent articles) -->
+            <section>
+                <ul class="posts">
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="single_en.html">3D Propeller - 5 curved blades (in progress)</a></h3>
+                                <time class="published" datetime="2025-02-20">Feb. 2025</time>
+                            </header>
+                            <a href="single_en.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="single_en.html">3D Building - Wind/earthquake analysis</a></h3>
+                                <time class="published" datetime="2025-01-28">Jan. 2025</time>
+                            </header>
+                            <a href="single_en.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="single_en.html">AON Center Tower - Meshing</a></h3>
+                                <time class="published" datetime="2025-02-05">Feb. 2025</time>
+                            </header>
+                            <a href="single_en.html" class="image"><img src="images/pic10.jpg" alt="" /></a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- About - Biography adapted -->
+            <section class="blurb">
+                <h2>About</h2>
+                <p>Master's student at Sorbonne University, passionate about mathematical modeling, optimization and software development. My projects combine theory and practice, from implementing AI algorithms in Python to 3D finite element simulation, and trajectory optimization in Matlab.</p>
+                <ul class="actions">
+                    <li><a href="#" class="button">Learn more</a></li>
+                </ul>
+            </section>
+
+            <!-- Footer - Social and credits -->
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="#" class="icon brands fa-google"><span class="label">Google Scholar</span></a></li>
+                </ul>
+                <p class="copyright">&copy; Dohemeto Bonaventure K. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: project illustrations.</p>
+            </section>
+
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Petit script pour adapter le lien du bouton de langue en fonction de la page courante
+        // (optionnel, car nous avons mis des liens fixes vers fr.html)
+        // Ce script permet de gérer si on renomme les fichiers.
+        (function() {
+            var currentUrl = window.location.pathname;
+            var fileName = currentUrl.substring(currentUrl.lastIndexOf('/')+1);
+            var langLink = document.getElementById('lang-link');
+            if (fileName === 'en.html' || fileName === '' || fileName === 'index.html') {
+                langLink.href = 'fr.html';
+                langLink.textContent = 'Français';
+            } else if (fileName === 'fr.html') {
+                langLink.href = 'en.html';
+                langLink.textContent = 'English';
+            } else {
+                // For other pages, we could add similar logic
+                // Default to French
+                langLink.href = 'fr.html';
+                langLink.textContent = 'Français';
+            }
+        })();
+    </script>
+
+</body>
+</html>
